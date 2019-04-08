@@ -1,0 +1,19 @@
+------ critical ----------
+
+*) improve handling of default paths to crmc.param and data files
+
+*) MacOS works only with STATIC ON for libraries
+
+------ optional ----------
+
+
+*) fix or disable many fortran compiler warnings for DPMJet/Pyhtia
+
+*) add crossing angle to the beams (request by Menjo-san)
+
+
+------ not critical -------
+
+*) messages at installation about FastJet are confusing
+
+*) disable epos, too <-- from TP : not completely possible without rewritting a lot (it is done in CONEX)
