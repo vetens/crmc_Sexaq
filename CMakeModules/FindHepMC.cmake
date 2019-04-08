@@ -17,7 +17,7 @@ MESSAGE(STATUS "Looking for HepMC...")
 
 # default hepmc common block size: 
 Set( HepMC_HEPEVT_SIZE 99990 )
-SET(HEPMC_PREFIX /user/jdeclerc/HepMC/install/)
+SET(HEPMC_PREFIX ./../../HepMC/install/)
 
 ## try to find each HepMC components in user defined path
 FOREACH (COMPONENT ${HepMC_FIND_COMPONENTS})
