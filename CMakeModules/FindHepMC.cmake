@@ -42,12 +42,6 @@ FOREACH (COMPONENT ${HepMC_FIND_COMPONENTS})
                 PATH_SUFFIXES
                 HepMC
                 src
-                install
-                include
-                share
-                hepmc_build
-                hepmc_install
-                CMakeFiles
                 lib
                 lib64
         )
@@ -81,9 +75,8 @@ FIND_PATH(HepMC_INCLUDE_DIRS
                 $ENV{HEP_ROOT}
 
                 PATH_SUFFIXES
-                src
                 include
-                include/HepMC
+                src
                 install
                 HepMC
                 hepmc_build
@@ -101,7 +94,6 @@ ENDIF ()
 
 ## final printout
 # if not found
-MESSAGE("Was HepMC found?")
 
 IF(${HEPMC_FOUND} MATCHES "FALSE")
         MESSAGE("HepMC Not found")
@@ -123,7 +115,8 @@ IF(${HEPMC_FOUND} MATCHES "FALSE")
 
 ELSE()
 # find length of hepmc common block pre-defined and use this for epos
-        EXECUTE_PROCESS (COMMAND cat ${HepMC_INCLUDE_DIRS}/HEPEVT_Wrapper.h
+        GET_FILENAME_COMPONENT(HepMC_INCLUDE_DIRS ${HepMC_INCLUDE_DIRS} DIRECTORY)
+        EXECUTE_PROCESS (COMMAND cat ${HepMC_INCLUDE_DIRS}/HepMC/HEPEVT_Wrapper.h
 	                 COMMAND grep "#define HEPEVT_EntriesAllocation" 
 			 COMMAND awk  "{print $3}"
 			 COMMAND tr "\n" " "
