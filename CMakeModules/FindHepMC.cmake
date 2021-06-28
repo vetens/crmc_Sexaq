@@ -76,6 +76,7 @@ FIND_PATH(HepMC_INCLUDE_DIRS
 
                 PATH_SUFFIXES
                 include
+                include/HepMC
                 src
                 install
                 HepMC
