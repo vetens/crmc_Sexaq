@@ -1,5 +1,6 @@
 #!/bin/bash
 echo "This is job number $1"
+echo "SET(HEPMC_PREFIX /afs/cern.ch/sw/lcg/external/HepMC/2.06.08/x86_64-slc6-gcc48-opt/)" >> CMakeLists.txt
 
 echo "Installing HepMC"
 git clone https://gitlab.cern.ch/hepmc/HepMC.git
