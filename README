@@ -87,13 +87,8 @@ bin/crmc -T <your options>
 if you want to test some specific set of options.
 
 
+After cloning this repository, you may also run the bash script `installCRMCrunGEN.sh` to install all prerequisites (tested on LXPLUS7) along with this module
 
-
-
-
-(*) On CERN lxplus HEPMC is preinstalled. Try setting
-SET(HEPMC_PREFIX /afs/cern.ch/sw/lcg/external/HepMC/2.06.08/x86_64-slc6-gcc48-opt/)
-in your CMakeLists.txt
 
 **********************************************************
                        Troubleshoot
