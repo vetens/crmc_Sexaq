@@ -16,7 +16,7 @@ cd ../..
 
 echo "Installing crmc"
 echo "Installing crmc"
-git clone https://github.com/jarnedc/crmc_Sexaq
+cd ..
 mkdir crmc_Sexaq_incl_installed
 cd crmc_Sexaq_incl_installed/
 cmake ../crmc_Sexaq/
