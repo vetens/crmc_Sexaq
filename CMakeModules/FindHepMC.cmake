@@ -29,6 +29,8 @@ FOREACH (COMPONENT ${HepMC_FIND_COMPONENTS})
 		/usr
 		/usr/local
 		${HEPMC_PREFIX}
+		${HEPMC_PREFIX}/include
+		${HEPMC_PREFIX}
                 ${HEPMC_ROOT}
                 ${HEPMC_ROOT_DIR}
                 ${HEP_ROOT}
@@ -38,11 +40,14 @@ FOREACH (COMPONENT ${HepMC_FIND_COMPONENTS})
                 $ENV{HEP_ROOT}
 
                 PATH_SUFFIXES
+                HepMC
+                src
                 install
                 include
                 share
                 hepmc_build
                 hepmc_install
+                CMakeFiles
                 lib
                 lib64
         )
@@ -76,7 +81,13 @@ FIND_PATH(HepMC_INCLUDE_DIRS
                 $ENV{HEP_ROOT}
 
                 PATH_SUFFIXES
+                src
                 include
+                include/HepMC
+                install
+                HepMC
+                hepmc_build
+                hepmc_install
 	)
 
 # set found flag
