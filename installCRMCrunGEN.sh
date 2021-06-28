@@ -19,7 +19,8 @@ make install
 cd ../../../
 WORKDIR=${PWD}
 cd crmc_Sexaq
-sed -i "s&HEPMCPREFIX&${WORKDIR}/HepMC/hepmc_install/install&g" CMakeLists.txt
+rm -f CMakeLists.txt
+sed -e "s&HEPMCPREFIX&${WORKDIR}/HepMC/hepmc_install/install&g" CMakeLists_Template.txt > CMakeLists.txt
 echo "Installing crmc"
 cd ..
 mkdir crmc_Sexaq_incl_installed
