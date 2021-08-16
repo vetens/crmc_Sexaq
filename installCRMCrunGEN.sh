@@ -27,3 +27,9 @@ mkdir crmc_Sexaq_incl_installed
 cd crmc_Sexaq_incl_installed/
 cmake ../crmc_Sexaq/
 make install
+
+##installing other CMSSW dependencies
+#cd ..
+#git clone https://github.com/jarnedc/cmssw.git
+#cd cmssw
+#git checkout from-CMSSW_7_1_20_patch2

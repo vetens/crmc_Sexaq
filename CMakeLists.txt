@@ -1,7 +1,7 @@
 CMAKE_MINIMUM_REQUIRED (VERSION 2.6)
 PROJECT (crmc)
 #SET(HEPMC_PREFIX /afs/cern.ch/work/w/wvetens/Sexaquarks/tmp/hepmc_install/)
-SET(HEPMC_PREFIX /afs/cern.ch/work/w/wvetens/Sexaquarks/tmp/HepMC/hepmc_install/install)
+SET(HEPMC_PREFIX /afs/cern.ch/user/w/wvetens/work/Sexaquarks/CMSSW_10_2_26/src/HepMC/hepmc_install/install)
 MESSAGE ( "HepMC Prefix set to: ${HEPMC_PREFIX}" )
 
 ######################################ONLY EDIT THIS######################################

@@ -110,7 +110,15 @@ On MacOS, please switch to STATIC libraries in CMakeLists.txt.
 
 Run the program by executing
 
-./bin/crmc -h
+.crmc -h
+
+from your installed directory
+
+if you installed using `installCRMCrunGen.sh`, then that should be:
+``
+cd ../crmc_Sexaq_incl_installed
+.crmc -h
+``
 
 to get the following help:
 
