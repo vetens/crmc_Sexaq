@@ -3,7 +3,7 @@ install information:
 for the full GENSIM of Sexaquarks in B-parking, it is recommended to use CMSSW 10_2_26 along with the modules IOMC/Input and SimG4Core/CustomPhysics. Prior to cloning (on lxplus) do:
 
 ```
-cmsrel 10_2_26
+cmsrel CMSSW_10_2_26
 cd CMSSW_10_2_26/src
 cmsenv
 git cms-addpkg IOMC/Input
