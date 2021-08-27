@@ -46,7 +46,7 @@ cd CustomGenerator/Custom
 ```
 Then clone this repository into CustomGenerator/Custom (the two directories are so that scram build for the custom CMSSW modules doesn't mess with the HepMC, EPOS-LHC, and CRMC stuff.
 ```
-git clone git@github.com:/vetens/crmc_Sexaq.git
+git clone https://github.com/vetens/crmc_Sexaq.git
 ```
 Then you can enter the directory and run the installation script for HepMC, EPOS-LHC, and CRMC
 ```
